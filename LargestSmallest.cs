@@ -10,6 +10,7 @@ namespace textfrequency
     {
         static void Main(string[] args)
         {
+            console.writeline("Enter a string: ");
             string wordarray = Console.ReadLine();
             string[] word = wordarray.Split(' ');
             
