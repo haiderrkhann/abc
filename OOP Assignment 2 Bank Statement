@@ -1,0 +1,36 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace BankAccount
+{
+    public class BankAccount
+    {
+        public string bankAccount { get; set; }
+        public string name { get; set; }
+        public int AccNum { get; set; }
+        public int balance { get; set; }
+
+        public BankAccount (string BankAcc, string Name, int AccountNum, int Bal)
+        {
+            bankAccount = BankAcc;
+            name = Name;
+            AccNum = AccountNum;
+            balance = Bal;
+        }
+         public virtual void Deposit (int D)
+        {
+            balance += D;
+        }
+        public virtual void Withdraw (int W)
+        {
+            balance -= W;
+        }
+        public class SavingAccount : BankAccount
+        static void Main(string[] args)
+        {
+        }
+    }
+}
