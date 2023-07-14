@@ -1,0 +1,65 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Test14_7
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            string name;
+            name=Console.ReadLine();
+            char[] n = name.ToCharArray();
+            string surname;
+            surname = Console.ReadLine();
+            char[] sn = surname.ToCharArray();
+            int age = 24;
+            char s1 = ' ';
+            char s2 = ' ';
+            char s3 = ' ';
+            char s4 = ' ';
+            string final = "";
+            string final2 = "";
+            string a = "";
+            string b = "";
+            string c = "";
+            string d = "";
+            for (int i = 0; i < n.Length; i++)
+            {
+
+                s1 = n[0];
+                a = s1.ToString();
+
+            }
+            for (int i = 0; i < n.Length; i++)
+            {
+
+                s2 = n[1];
+                b = s2.ToString();
+
+            }
+
+            for (int i = 0; i < sn.Length; i++)
+            {
+
+                s3 = sn[0];
+                c = s3.ToString();
+            }
+            for (int i = 0; i < sn.Length; i++)
+            {
+
+                s4 = sn[1];
+                d = s4.ToString();
+            }
+
+            final = a + b + c + d;
+            final2 = final + age;
+            Console.WriteLine(final2);
+            Console.ReadKey();
+        }
+    }
+}
+
